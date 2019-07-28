@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'search', loadChildren: './search/search.module#SearchPageModule' },
   { path: 'notifications', loadChildren: './notifications/notifications.module#NotificationsPageModule' },
-  { path: 'mail', loadChildren: './mail/mail.module#MailPageModule' }
+  { path: 'mail', loadChildren: './mail/mail.module#MailPageModule' },
+  { path: 'search', loadChildren: './search/search.module#SearchPageModule' }
 ];
 
 @NgModule({

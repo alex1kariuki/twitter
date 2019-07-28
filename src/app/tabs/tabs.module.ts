@@ -9,7 +9,7 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'tabs',
     component: TabsPage,
     children: [
       {
@@ -27,6 +27,11 @@ const routes: Routes = [
         loadChildren: './mail/mail.module#MailPageModule'
       }
     ]
+  },
+  {
+    path: '',
+    redirectTo: 'tabs/home',
+    pathMatch: 'full'
   }
 ];
 
